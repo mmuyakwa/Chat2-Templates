@@ -1,0 +1,21 @@
+[project]
+name = "flask-multi-dashboard"
+version = "0.1.0"
+description = "A comprehensive Flask-based web application with multiple dashboards."
+requires-python = ">=3.12"
+dependencies = [
+    "Flask",
+    "Flask-SocketIO",
+    "requests",
+    "python-nmap",
+    "python-dotenv",
+    "markdown",
+    "Pygments"
+]
+
+[project.optional-dependencies]
+dev = ["ruff"]
+
+[tool.setuptools]
+packages = ["app"]
+

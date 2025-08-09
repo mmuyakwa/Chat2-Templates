@@ -1,0 +1,14 @@
+{
+    "ideas": [
+        {
+            "id": 1,
+            "title": "My First Great Idea",
+            "description": "This is a detailed description of my first idea."
+        },
+        {
+            "id": 2,
+            "title": "Another Brilliant Concept",
+            "description": "More details about this other concept."
+        }
+    ]
+}

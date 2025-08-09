@@ -1,0 +1,29 @@
+# Git and Docker files
+.git
+.gitignore
+.dockerignore
+
+# Python virtual environment
+.venv/
+
+# IDE and local config
+.vscode/
+.gemini/
+
+# Local development files and artifacts
+.bmad-core/
+.github/
+web-bundles/
+app_data/
+systems_info.json
+*.sh
+*.ps1
+*.txt
+*.md
+*.toml
+*.yaml
+prompts/
+
+# Environment files - these are injected by Docker Compose, not copied
+.env
+*.env

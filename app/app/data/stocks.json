@@ -1,0 +1,31 @@
+{
+    "name": "My Tech Portfolio",
+    "stocks": [
+        {
+            "symbol": "AAPL",
+            "shares": 10,
+            "avg_price": 150.0
+        },
+        {
+            "symbol": "GOOGL",
+            "shares": 5,
+            "avg_price": 2800.0
+        },
+        {
+            "symbol": "TSLA",
+            "shares": 8,
+            "avg_price": 700.0
+        },
+        {
+            "symbol": "AMZN",
+            "shares": 3,
+            "avg_price": 3400.0
+        }
+    ],
+    "market_values": {
+        "AAPL": 175.0,
+        "GOOGL": 2950.0,
+        "TSLA": 750.0,
+        "AMZN": 3550.0
+    }
+}

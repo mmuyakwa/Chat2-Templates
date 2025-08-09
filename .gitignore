@@ -1,0 +1,37 @@
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE and editor directories
+.vscode/
+.idea/
+.project
+.settings
+
+# Local development tool cache
+.gemini/
+
+# Environment variables - VERY IMPORTANT
+.env
+*.env
+
+# Application-generated data files
+app/data/
+systems_info.json
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+.bmad-core
+chat.txt
+web-bundles
+flask_multi_dashboard.egg-info
+dokumentieren-yek.sh
+requirements.txt
+uv.lock
+yek.yaml
