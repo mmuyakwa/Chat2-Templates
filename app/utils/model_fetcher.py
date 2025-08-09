@@ -1,5 +1,4 @@
 import requests
-import os
 
 OPENROUTER_API_URL = "https://openrouter.ai/api/v1/models"
 
@@ -18,19 +17,3 @@ def get_available_models():
     except requests.exceptions.RequestException as e:
         print(f"Error fetching models from OpenRouter: {e}")
         return []
-
-if __name__ == '__main__':
-    # Example usage:
-    available_models = get_available_models()
-    if available_models:
-        print(f"Successfully fetched {len(available_models)} models.")
-        
-        # Example of how you might access model details
-        for model in available_models[:5]: # Print first 5 models
-            print(f"- {model.get('name')} (ID: {model.get('id')})")
-
-        compatible_models = filter_openrouter_models(available_models)
-        print(f"\n{len(compatible_models)} models are considered compatible.")
-
-    else:
-        print("Could not fetch models from OpenRouter.")

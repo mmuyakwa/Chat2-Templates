@@ -1,7 +1,5 @@
 import requests
-import markdown
 from flask import Blueprint, render_template, current_app, request, jsonify
-from flask_socketio import emit
 from app.extensions import socketio
 from app.utils.prompt_loader import load_prompts
 from app.utils.model_fetcher import get_available_models
