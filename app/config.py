@@ -14,8 +14,10 @@ class Config:
 
     # --- Application-Specific Settings ---
     DEFAULT_MODEL = os.environ.get('DEFAULT_MODEL', 'openrouter/auto')
-    # Path to the prompts directory. Can be set in .env for local development.
-    PROMPTS_DIR = os.environ.get('PROMPTS_PATH', 'app/prompts')
+    # Path to the prompts directory.
+    # For Docker, this is the root 'prompts' dir inside the container.
+    # For local dev, it's overridden by PROMPTS_PATH in the .env file.
+    PROMPTS_DIR = os.environ.get('PROMPTS_PATH', 'prompts')
     DATA_DIR = os.environ.get('DATA_DIR', 'app/data')
     
     # --- Network Scanner ---

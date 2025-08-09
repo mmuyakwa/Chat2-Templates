@@ -1,13 +1,11 @@
-version: '3.8'
-
 services:
   web:
     build: .
     ports:
       - "5004:5004"
     volumes:
-      # Mount the local prompts directory into the container for live editing
-      - ./prompts:/usr/src/app/app/prompts
+      # Mount the local prompts directory to the location the app expects
+      - ./prompts:/usr/src/app/prompts
       # Mount the application code for live reloading
       - ./app:/usr/src/app/app
       # Persist data outside the container

@@ -1,5 +1,6 @@
 import os
 import re
+from flask import current_app
 
 def load_prompts(prompts_directory):
     """

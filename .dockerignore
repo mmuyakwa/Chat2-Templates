@@ -20,7 +20,6 @@ systems_info.json
 *.ps1
 *.txt
 *.md
-*.toml
 *.yaml
 prompts/
 
