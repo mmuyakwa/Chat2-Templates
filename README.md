@@ -2,6 +2,8 @@
 
 A sleek and powerful Flask-based web application that serves as a dynamic interface for various AI models from OpenRouter. Customize your AI interactions with dynamic prompt templates and enjoy a clean, responsive UI.
 
+![AI Query Assistant Interface](screenshot.png)
+
 ---
 
 ## ✨ Key Features

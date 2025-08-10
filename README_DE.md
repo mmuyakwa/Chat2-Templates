@@ -2,6 +2,8 @@
 
 Eine elegante und leistungsstarke Flask-basierte Webanwendung, die als dynamisches Interface für verschiedene KI-Modelle von OpenRouter dient. Passen Sie Ihre KI-Interaktionen mit dynamischen Prompt-Vorlagen an und genießen Sie eine saubere, responsive Benutzeroberfläche.
 
+![AI Query Assistant Interface](screenshot.png)
+
 ---
 
 ## ✨ Hauptmerkmale
