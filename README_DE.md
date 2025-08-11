@@ -121,3 +121,14 @@ Fügen Sie einfach eine neue Markdown-Datei (`.md`) zum `app/prompts/`-Verzeichn
 -   Um die **Reihenfolge zu steuern**, stellen Sie dem Dateinamen eine Nummer voran, z.B. `01_Mein_erster_Prompt.md`.
 -   Der Name im Dropdown-Menü wird automatisch bereinigt (z.B. "Mein Erster Prompt").
 -   Der Inhalt der Datei wird als **System-Prompt** für die KI verwendet.
+
+---
+
+![Static Badge](https://img.shields.io/badge/made_by-Michael_Muyakwa-purple)
+![GitHub last commit](https://img.shields.io/github/last-commit/mmuyakwa/Chat2-Templates)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/mmuyakwa/Chat2-Templates/ci.yml)
+
+---
+
+## 📜 Lizenz
+Dieses Projekt ist unter der MIT-Lizenz lizenziert. Siehe die [LICENSE](LICENSE) Datei für Details.
