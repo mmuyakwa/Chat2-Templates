@@ -6,18 +6,26 @@ A sleek and powerful Flask-based web application that serves as a dynamic interf
 
 ---
 
+![Static Badge](https://img.shields.io/badge/made_by-Michael_Muyakwa-purple)
+![Python Version from PEP 621 TOML](https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fgithub.com%2Fmmuyakwa%2FChat2-Templates%2Fraw%2Frefs%2Fheads%2Fmaster%2Fpyproject.toml)
+![GitHub repo size](https://img.shields.io/github/repo-size/mmuyakwa/Chat2-Templates)
+![GitHub last commit](https://img.shields.io/github/last-commit/mmuyakwa/Chat2-Templates)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/mmuyakwa/Chat2-Templates/ci.yml)
+
+---
+
 ## ✨ Key Features
 
--   **🎨 Modern UI**: A clean, dark-themed, and responsive single-page application.
--   **🔄 Dynamic AI Models**: Fetches the latest available models from the OpenRouter API in real-time.
--   **📂 Dynamic Prompt Templates**: Automatically creates a selection menu from Markdown (`.md`) files in the `prompts` directory.
--   **🔢 Sorted & Cleaned Prompts**: Prompts are sorted alphabetically. Naming like `01_My_Prompt.md` is displayed cleanly as "My Prompt".
--   **✍️ Advanced Text Input**: A multi-line textarea that sends with `Cmd/Ctrl + Enter`.
--   **📄 Markdown Rendering**: Toggle between raw Markdown and a beautifully rendered HTML view for AI responses.
--   **🎨 Syntax Highlighting**: Code blocks in the rendered view are highlighted using Pygments.
--   **📋 Copy-to-Clipboard**: Easily copy raw Markdown or individual code snippets with a single click.
--   **🐳 Dockerized**: Comes with a multi-stage `Dockerfile` and `docker-compose.yaml` for easy, reproducible deployment.
--   **⚙️ Configurable**: Easily set your default AI model and API keys via an `.env` file.
+- **🎨 Modern UI**: A clean, dark-themed, and responsive single-page application.
+- **🔄 Dynamic AI Models**: Fetches the latest available models from the OpenRouter API in real-time.
+- **📂 Dynamic Prompt Templates**: Automatically creates a selection menu from Markdown (`.md`) files in the `prompts` directory.
+- **🔢 Sorted & Cleaned Prompts**: Prompts are sorted alphabetically. Naming like `01_My_Prompt.md` is displayed cleanly as "My Prompt".
+- **✍️ Advanced Text Input**: A multi-line textarea that sends with `Cmd/Ctrl + Enter`.
+- **📄 Markdown Rendering**: Toggle between raw Markdown and a beautifully rendered HTML view for AI responses.
+- **🎨 Syntax Highlighting**: Code blocks in the rendered view are highlighted using Pygments.
+- **📋 Copy-to-Clipboard**: Easily copy raw Markdown or individual code snippets with a single click.
+- **🐳 Dockerized**: Comes with a multi-stage `Dockerfile` and `docker-compose.yaml` for easy, reproducible deployment.
+- **⚙️ Configurable**: Easily set your default AI model and API keys via an `.env` file.
 
 ---
 
@@ -27,8 +35,8 @@ Follow these steps to get the application up and running.
 
 ### 1. Prerequisites
 
--   [Docker](https://www.docker.com/get-started) and [Docker Compose](https://docs.docker.com/compose/install/)
--   OR a local Python environment with [uv](https://github.com/astral-sh/uv)
+- [Docker](https://www.docker.com/get-started) and [Docker Compose](https://docs.docker.com/compose/install/)
+- OR a local Python environment with [uv](https://github.com/astral-sh/uv)
 
 ### 2. Configuration 🔑
 
@@ -36,6 +44,7 @@ The application uses an `.env` file for configuration.
 
 1.  **Copy the Example:** If you don't have a `.env` file, rename `.env.example` to `.env`.
 2.  **Edit `.env`:**
+
     ```dotenv
     # Your secret key from https://openrouter.ai/keys
     OPENROUTER_API_KEY=your_api_key_here
@@ -85,9 +94,9 @@ The application will be available at 👉 **http://localhost:5004**
 
 This project uses GitHub Actions to maintain code quality and keep dependencies up to date:
 
--   **CI & Linting**: On every push or pull request, a workflow automatically runs the `ruff` linter to check for code style issues and errors.
--   **Dependabot**: Automatically scans for outdated dependencies and creates pull requests to update them.
--   **Automerge**: Automatically merges Dependabot pull requests if all checks (like the linter) pass successfully.
+- **CI & Linting**: On every push or pull request, a workflow automatically runs the `ruff` linter to check for code style issues and errors.
+- **Dependabot**: Automatically scans for outdated dependencies and creates pull requests to update them.
+- **Automerge**: Automatically merges Dependabot pull requests if all checks (like the linter) pass successfully.
 
 ---
 
@@ -118,18 +127,12 @@ This project uses GitHub Actions to maintain code quality and keep dependencies 
 
 Simply add a new Markdown file (`.md`) to the `app/prompts/` directory.
 
--   To **control the order**, prefix the filename with a number, e.g., `01_My_First_Prompt.md`.
--   The name in the dropdown will be automatically cleaned up (e.g., "My First Prompt").
--   The content of the file will be used as the **system prompt** for the AI.
-
----
-
-![Static Badge](https://img.shields.io/badge/made_by-Michael_Muyakwa-purple)
-![GitHub last commit](https://img.shields.io/github/last-commit/mmuyakwa/Chat2-Templates)
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/mmuyakwa/Chat2-Templates/ci.yml)
-
+- To **control the order**, prefix the filename with a number, e.g., `01_My_First_Prompt.md`.
+- The name in the dropdown will be automatically cleaned up (e.g., "My First Prompt").
+- The content of the file will be used as the **system prompt** for the AI.
 
 ---
 
 ## 📜 License
+
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details

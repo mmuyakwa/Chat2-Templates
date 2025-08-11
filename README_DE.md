@@ -6,18 +6,26 @@ Eine elegante und leistungsstarke Flask-basierte Webanwendung, die als dynamisch
 
 ---
 
+![Static Badge](https://img.shields.io/badge/made_by-Michael_Muyakwa-purple)
+![Python Version from PEP 621 TOML](https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fgithub.com%2Fmmuyakwa%2FChat2-Templates%2Fraw%2Frefs%2Fheads%2Fmaster%2Fpyproject.toml)
+![GitHub repo size](https://img.shields.io/github/repo-size/mmuyakwa/Chat2-Templates)
+![GitHub last commit](https://img.shields.io/github/last-commit/mmuyakwa/Chat2-Templates)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/mmuyakwa/Chat2-Templates/ci.yml)
+
+---
+
 ## ✨ Hauptmerkmale
 
--   **🎨 Modernes UI**: Eine saubere, dunkle und responsive Single-Page-Anwendung.
--   **🔄 Dynamische KI-Modelle**: Ruft die neuesten verfügbaren Modelle von der OpenRouter-API in Echtzeit ab.
--   **📂 Dynamische Prompt-Vorlagen**: Erstellt automatisch ein Auswahlmenü aus den Markdown-Dateien (`.md`) im `prompts`-Verzeichnis.
--   **🔢 Sortierte & bereinigte Prompts**: Die Prompts werden alphabetisch sortiert. Namen wie `01_Mein_Prompt.md` werden sauber als "Mein Prompt" angezeigt.
--   **✍️ Erweiterte Texteingabe**: Ein mehrzeiliges Textfeld, das mit `Cmd/Ctrl + Enter` sendet.
--   **📄 Markdown-Rendering**: Wechseln Sie zwischen rohem Markdown und einer ansprechend gerenderten HTML-Ansicht für die KI-Antworten.
--   **🎨 Syntax-Highlighting**: Codeblöcke in der gerenderten Ansicht werden mit Pygments farblich hervorgehoben.
--   **📋 In die Zwischenablage kopieren**: Kopieren Sie einfach rohes Markdown oder einzelne Code-Snippets mit einem Klick.
--   **🐳 Docker-Unterstützung**: Inklusive `Dockerfile` und `docker-compose.yaml` für eine einfache, reproduzierbare Bereitstellung.
--   **⚙️ Konfigurierbar**: Legen Sie Ihr Standard-KI-Modell und Ihre API-Schlüssel einfach über eine `.env`-Datei fest.
+- **🎨 Modernes UI**: Eine saubere, dunkle und responsive Single-Page-Anwendung.
+- **🔄 Dynamische KI-Modelle**: Ruft die neuesten verfügbaren Modelle von der OpenRouter-API in Echtzeit ab.
+- **📂 Dynamische Prompt-Vorlagen**: Erstellt automatisch ein Auswahlmenü aus den Markdown-Dateien (`.md`) im `prompts`-Verzeichnis.
+- **🔢 Sortierte & bereinigte Prompts**: Die Prompts werden alphabetisch sortiert. Namen wie `01_Mein_Prompt.md` werden sauber als "Mein Prompt" angezeigt.
+- **✍️ Erweiterte Texteingabe**: Ein mehrzeiliges Textfeld, das mit `Cmd/Ctrl + Enter` sendet.
+- **📄 Markdown-Rendering**: Wechseln Sie zwischen rohem Markdown und einer ansprechend gerenderten HTML-Ansicht für die KI-Antworten.
+- **🎨 Syntax-Highlighting**: Codeblöcke in der gerenderten Ansicht werden mit Pygments farblich hervorgehoben.
+- **📋 In die Zwischenablage kopieren**: Kopieren Sie einfach rohes Markdown oder einzelne Code-Snippets mit einem Klick.
+- **🐳 Docker-Unterstützung**: Inklusive `Dockerfile` und `docker-compose.yaml` für eine einfache, reproduzierbare Bereitstellung.
+- **⚙️ Konfigurierbar**: Legen Sie Ihr Standard-KI-Modell und Ihre API-Schlüssel einfach über eine `.env`-Datei fest.
 
 ---
 
@@ -27,8 +35,8 @@ Folgen Sie diesen Schritten, um die Anwendung zum Laufen zu bringen.
 
 ### 1. Voraussetzungen
 
--   [Docker](https://www.docker.com/get-started) und [Docker Compose](https://docs.docker.com/compose/install/)
--   ODER eine lokale Python-Umgebung mit [uv](https://github.com/astral-sh/uv)
+- [Docker](https://www.docker.com/get-started) und [Docker Compose](https://docs.docker.com/compose/install/)
+- ODER eine lokale Python-Umgebung mit [uv](https://github.com/astral-sh/uv)
 
 ### 2. Konfiguration 🔑
 
@@ -36,6 +44,7 @@ Die Anwendung verwendet eine `.env`-Datei für die Konfiguration.
 
 1.  **Beispiel kopieren:** Falls Sie keine `.env`-Datei haben, benennen Sie `.env.example` in `.env` um.
 2.  **`.env`-Datei bearbeiten:**
+
     ```dotenv
     # Ihr geheimer API-Schlüssel von https://openrouter.ai/keys
     OPENROUTER_API_KEY=ihr_api_schlüssel_hier
@@ -85,9 +94,9 @@ Die Anwendung ist dann erreichbar unter 👉 **http://localhost:5004**
 
 Dieses Projekt verwendet GitHub Actions, um die Code-Qualität zu sichern und Abhängigkeiten aktuell zu halten:
 
--   **CI & Linting**: Bei jedem Push oder Pull Request wird automatisch der `ruff`-Linter ausgeführt, um den Code auf Stilprobleme und Fehler zu prüfen.
--   **Dependabot**: Sucht automatisch nach veralteten Abhängigkeiten und erstellt Pull Requests, um diese zu aktualisieren.
--   **Automerge**: Führt Dependabot Pull Requests automatisch zusammen, wenn alle Prüfungen (wie der Linter) erfolgreich sind.
+- **CI & Linting**: Bei jedem Push oder Pull Request wird automatisch der `ruff`-Linter ausgeführt, um den Code auf Stilprobleme und Fehler zu prüfen.
+- **Dependabot**: Sucht automatisch nach veralteten Abhängigkeiten und erstellt Pull Requests, um diese zu aktualisieren.
+- **Automerge**: Führt Dependabot Pull Requests automatisch zusammen, wenn alle Prüfungen (wie der Linter) erfolgreich sind.
 
 ---
 
@@ -118,17 +127,12 @@ Dieses Projekt verwendet GitHub Actions, um die Code-Qualität zu sichern und Ab
 
 Fügen Sie einfach eine neue Markdown-Datei (`.md`) zum `app/prompts/`-Verzeichnis hinzu.
 
--   Um die **Reihenfolge zu steuern**, stellen Sie dem Dateinamen eine Nummer voran, z.B. `01_Mein_erster_Prompt.md`.
--   Der Name im Dropdown-Menü wird automatisch bereinigt (z.B. "Mein Erster Prompt").
--   Der Inhalt der Datei wird als **System-Prompt** für die KI verwendet.
-
----
-
-![Static Badge](https://img.shields.io/badge/made_by-Michael_Muyakwa-purple)
-![GitHub last commit](https://img.shields.io/github/last-commit/mmuyakwa/Chat2-Templates)
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/mmuyakwa/Chat2-Templates/ci.yml)
+- Um die **Reihenfolge zu steuern**, stellen Sie dem Dateinamen eine Nummer voran, z.B. `01_Mein_erster_Prompt.md`.
+- Der Name im Dropdown-Menü wird automatisch bereinigt (z.B. "Mein Erster Prompt").
+- Der Inhalt der Datei wird als **System-Prompt** für die KI verwendet.
 
 ---
 
 ## 📜 Lizenz
+
 Dieses Projekt ist unter der MIT-Lizenz lizenziert. Siehe die [LICENSE](LICENSE) Datei für Details.
